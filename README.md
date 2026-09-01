@@ -49,13 +49,25 @@ The Linux audit script requires Python 3 and the `paramiko` library for SSH conn
 * Must be run from a Windows machine with network visibility to targets over TCP 5985/5986.
 * Requires PowerShell 5.1 or higher.
 * Target machines must have WinRM enabled.
+* **WinRM TrustedHosts Configuration:** Before running the script, you must configure your local machine to trust the target network IPs. Open a PowerShell console as an Administrator and execute one of the following:
 
+  *To trust a specific subnet:*
+  ```powershell
+  Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.0.*" -Force
+  ```
+  *To trust all hosts (recommended for isolated/air-gapped analysis environments only):*
+  ```powershell
+  Set-Item WSMan:\localhost\Client\TrustedHosts -Value "*" -Force
+  ```
+
+#### Execution
 1. Open a PowerShell console as an Administrator.
 2. Run the script:
    ```powershell
    .\winpesa.ps1
    ```
 3. Enter your administrative credentials when prompted. Results will display in the console and save to `ESA_windows_security_audit.txt`.
+
 
 ---
 
