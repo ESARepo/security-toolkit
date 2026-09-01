@@ -84,7 +84,7 @@ MAX_THREADS = 10
 ---
 
 ## 🔒 Security & Usage Notice
-These tools prompt for the target username in plaintext within the session, while securely masking input passwords (via Python `getpass` and PowerShell `-AsSecureString`). The scripts execute highly detailed audits and are strictly intended for **internal administrative use** by authorized security personnel and system administrators. Always ensure you have explicit permission before scanning network subnets.
+These tools prompt for the username in plaintext within the session, while securely masking input passwords (via Python `getpass` and PowerShell `-AsSecureString`). The scripts execute highly detailed audits and are strictly intended for **internal administrative use** by authorized security personnel and system administrators. Always ensure you have explicit permission before scanning network subnets.
 
 
 ## 📝 License
