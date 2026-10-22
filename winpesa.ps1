@@ -26,9 +26,8 @@ $MaxScanTimeMinutes = 3  # Force-kills hung background tasks after 3 minutes tot
 
 $Banner = @"
 
-                                                   
+                                                               
              ______   _____
-
             |  ____| / ____|    /\
             | |__   | (___     /  \
             |  __|   \___ \   / /\ \
